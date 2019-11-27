@@ -18,7 +18,8 @@ const (
 // Hello greets GitHub Actions.
 func Hello(out io.Writer, lang Lang) {
 	if lang == Zh {
-		fmt.Fprint(out, "你好, GitHub Actions")
+		fmt.Fprint(out, "你好, GitHub Actions!")
+		return
 	}
 	fmt.Fprint(out, "Hello, GitHub Actions!")
 }
